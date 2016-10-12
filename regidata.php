@@ -31,9 +31,9 @@ $password="";
 
 	@mysql_select_db($database,$con) or die(" Unable to conect");
 
-	mysql_query("INSERT into `users` VALUES ('','$userreg','$passreg') ") or die("Strange error");
+	mysql_query("INSERT into `users` VALUES ('$userreg','$passreg') ") or die("Strange error for user");
 	
-	mysql_query("INSERT into `info` VALUES ('$regname','$regsrname','$regaddr','$regcity','$regpin','$regemailid') ") or die("Strange error");	
+	mysql_query("INSERT into `info` VALUES ('$regname','$regsrname','$regaddr','$regcity','$regpin','$regemailid') ") or die("Strange error for into table");	
 
 
 
