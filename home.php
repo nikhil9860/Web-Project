@@ -1,5 +1,13 @@
 <? 
-session_start();
+
+if(!isset($_COOKIE["user"])) {  
+    echo "Sorry, session expired !";
+    header('Location:index.php');  
+} else {  
+    
+} 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +66,7 @@ h3{
 <body>
 
 <nav>
-<a href="Logout.php">Logout</a>
+<a href="logout.php">Logout</a>
 	<a href="check.php">Check Booking</a>
 	<a href="booking.php"> Booking</a>
 	<a href="tariffs.php">Trariffs  </a>

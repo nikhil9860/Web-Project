@@ -1,3 +1,14 @@
+<?
+if(!isset($_COOKIE["user"])) {  
+    echo "Sorry, session expired !";
+    header('Location:index.php');  
+} else {  
+    
+} 
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

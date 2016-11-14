@@ -23,7 +23,7 @@
 
 </div>
 
-	<form action="index.html">
+	<form action="index.php">
 
 	&nbsp<input type="submit" value="tryagain" ></input>
 
