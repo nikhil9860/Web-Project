@@ -4,7 +4,18 @@
 
 <?
 
-$bname=$_POST['uname'];
+if(!isset($_COOKIE["user"])) {  
+    echo "Sorry, session expired !";
+    header('Location:index.php');  
+} else {  
+  
+  echo "$bname";  
+} 
+
+$
+
+
+$bname=$_COOKIE["user"];
 $bsd=$_POST['sbd'];
 $bst=$_POST['sbt'];
 $bed=$_POST['ebd'];

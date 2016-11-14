@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -61,12 +63,12 @@ Login page
 	
 
 	UserName:
-	<input type="text" name="user">
+	<input type="text" name="inputuser">
 		
 	<br>
 
 	PassWord:
-	<input type="password" name="pass">
+	<input type="password" name="inputpass">
 	<br>
 
 	<input type="submit" value="Login"> 
@@ -86,3 +88,4 @@ Login page
 
 </body>
 </html>
+

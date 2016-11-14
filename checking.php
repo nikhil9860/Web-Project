@@ -3,24 +3,7 @@
 <head>
 	<title></title>
 
-	<script type="text/javascript">
-		
-	function check (){
-
-		
-		a=document.f1.uname.value.length;
-
-		if(a<6){
-
-		alert(" Username Should be atleast 6 chars ");
-			
-		}
-
-
-	}
-
-	</script>
-
+	
 
 <body>
 

@@ -1,3 +1,7 @@
+<? 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,9 +34,10 @@ nav{
  
 }	
 
-h1{
+h3{
 
 	color:black;
+
 
 }
 
@@ -52,30 +57,26 @@ h1{
 
 <body>
 
-
-
-<form action="index.html">
-	
-
-<br>
-<div align="right">
-	
-<input type="submit" value="Log out" onclick="msg()"></input>
-
-</div>
-</form>
-
-
 <nav>
-	<a href="check.html">Check Booking</a>
+<a href="Logout.php">Logout</a>
+	<a href="check.php">Check Booking</a>
 	<a href="booking.php"> Booking</a>
 	<a href="tariffs.php">Trariffs  </a>
-	<a href="faqs.html">FAQs</a>
+	<a href="faqs.php">FAQs</a>
 	
 
 	
 </nav>
-&nbsp<h1 align="top" > Welcome User Select your choice </h1>
+&nbsp<h3 align="top" > Welcome User  
+<? 
+
+if(!isset($_COOKIE["user"])) {  
+    echo "Sorry, cookie is not found!";  
+} else {  
+    echo $_COOKIE["user"];  
+}  
+
+?> Select your choice</h3>
 
 </body>
 </html>

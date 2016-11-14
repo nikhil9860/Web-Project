@@ -3,36 +3,33 @@
 <head>
 	<title>Car Booking Page </title>
 
-	<style type="text/css">
+	<link rel="stylesheet" type="text/css" href="stylefile.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
+ </script>
+
+	 <style type="text/css">
 
 	body{
 
 		background-color: #f5f5f5;
 		font-family: cursive;
-		font-size: 23px;
+		font-size: 17px;
 		word-spacing: 10px;
 	}
 
 	h1{
 
-		font-size: 30px;
+		font-size: 25px;
 		text-align: center;
 		color: blue;
 		font-style: italic;
 
 	}
 
-	a{
-	font-style: arial;
-	float:right;
-	padding-right: 14px;
-	text-decoration : none ;
-	font-size: 22px;
-	font-family: serif;
-
-}
-
-	</style>
+	
+	</style> 
 
 	<script type="text/javascript">
 		
@@ -65,6 +62,16 @@
 
 	}
 
+	function pop (){
+
+		var re=document.f1.fare.value;
+		if(re==0){
+
+			alert("Booking cannot be done");
+		}
+
+	}
+
 	</script>
 
 </head>
@@ -79,29 +86,29 @@
 <form name="f1" action="book.php" method="post">
 
 	
-Username:
-<input type="text" name="uname" onblur="namecheck()"></input> 
+<!-- &nbsp Username:
+<input type="text" name="uname"></input> 
 
-<br>	
+ --><br>	
 
 
-	Start Date :
+&nbsp Start Date :
 <input type="date" name="sbd"></input> 
- Time:
+ &nbsp Time:
 <input type="time" name="sbt"></input> 
 
 <br>
 
 
 
-	End Date : 
+&nbsp End Date : 
 	<input type="date" name="ebd"></input> 
-	Time:
+&nbsp	Time:
 	<input type="time" name="ebt"></input> 
 
 	<br>
 	
-	Select Car: 
+&nbsp	Select Car: 
 	<select name="car"> 
 	<option value="13" name="xuv" >Xuv500</option> 
 	<option value="12" name="strome">Strome</option>
@@ -111,13 +118,13 @@ Username:
 
 	<br>
 
-	Expected Kms:
+&nbsp	Expected Kms:
 	<input type="number" name="kms" min="10" ></input> 
 	<br>
-	Total Fare :
+&nbsp	Total Fare :
 	<input type="" readonly="" name="fare" ></input>
 	<br>
-	<input type="submit"></input>
+	<input type="submit" onclick="pop()" ></input>
 	<input type="reset"></input> 
 
 	<br>

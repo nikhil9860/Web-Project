@@ -1,10 +1,12 @@
 <?
-
-$inputuser = $_POST['user'];
-$inputpass = $_POST['pass'];
+session_start();
+$inputuser = $_POST['inputuser'];
+$inputpass = $_POST['inputpass'];
 $user ="root";
 $password = "";
 $database="justride";
+setcookie("user","$inputuser");
+
 
 $connect = mysql_connect("localhost",$user,$password);
 @mysql_select_db($database) or ("Database not found");
@@ -17,7 +19,7 @@ $resultpass = mysql_query($querypass);
 $row = mysql_fetch_array($result);
 $rowpass = mysql_fetch_array($resultpass);
 
-$serveruser =$row['user'];
+$serveruser =$row['user'];	
 $serverpass =$rowpass['password'];
 	
 	
@@ -30,6 +32,8 @@ $serverpass =$rowpass['password'];
 		echo"Database output";
 		mysql_close();
 		if($inputpass == $serverpass){
+			$_session['inputuser']=$inputuser;
+			echo "$inputuser";
 			header('Location:home.php');
 
 		}else{

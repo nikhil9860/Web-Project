@@ -1,3 +1,15 @@
+<?
+if(!isset($_COOKIE["user"])) {  
+    echo "Sorry, session expired !";
+    header('Location:index.php');  
+} else {  
+    
+} 
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +71,7 @@
 <body>
 		<nav>
 			
-			/<a href="home.html">Home</a>
+			<a href="home.php">Home</a>
 
 		</nav>
 

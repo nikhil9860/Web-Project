@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
 
-<style type="text/css">
-	
-body{
 
-	/*
-	background-image: url("images/caution-sign.jpg");
 
-	*/
-}
-
-</style>
-	
 	<body>
 		<center>
-	<h1 color="red"> Incorrect Login ID or Password Try Again</h1>
+<div class="container">
+	&nbsp
+
+	<div class="alert alert-danger">  
+    <strong>Danger!</strong>   Incorrect Login ID or Password Try Again
+</div>  
+	  
+  </div>  
+
+</div>
 
 	<form action="index.html">
 

@@ -1,0 +1,30 @@
+<style type="text/css">
+
+	body{
+
+		background-color: #f5f5f5;
+		font-family: cursive;
+		font-size: 23px;
+		word-spacing: 10px;
+	}
+
+	h1{
+
+		font-size: 30px;
+		text-align: center;
+		color: blue;
+		font-style: italic;
+
+	}
+
+	a{
+	font-style: arial;
+	float:right;
+	padding-right: 14px;
+	text-decoration : none ;
+	font-size: 22px;
+	font-family: serif;
+
+}
+
+	</style>
