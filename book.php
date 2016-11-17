@@ -9,10 +9,8 @@ if(!isset($_COOKIE["user"])) {
     header('Location:index.php');  
 } else {  
   
-  echo "$bname";  
+  //echo "$bname";  
 } 
-
-$
 
 
 $bname=$_COOKIE["user"];

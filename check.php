@@ -30,7 +30,7 @@ $rt=mysql_query($qr);
  if(! $rt ) {
  		      //die('NO bookings found ' );
  		
- 	  header('Location:check.html');
+ 	  header('Location:Nobooking.php');
    }
 
    

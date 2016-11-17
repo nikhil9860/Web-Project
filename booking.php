@@ -14,11 +14,7 @@ if(!isset($_COOKIE["user"])) {
 <head>
 	<title>Car Booking Page </title>
 
-	<link rel="stylesheet" type="text/css" href="stylefile.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  
-	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">  
- </script>
+	
 
 	 <style type="text/css">
 
@@ -45,17 +41,7 @@ if(!isset($_COOKIE["user"])) {
 	<script type="text/javascript">
 		
 
-	function namecheck(){
 
-		a = document.f1.uname.value.length;
-
-		if(a==0){
-
-			alert("Username cannot be blank");
-		}
-
-
-	}
 
 	function kmcal(){
 
@@ -73,16 +59,7 @@ if(!isset($_COOKIE["user"])) {
 
 	}
 
-	function pop (){
-
-		var re=document.f1.fare.value;
-		if(re==0){
-
-			alert("Booking cannot be done");
-		}
-
-	}
-
+	
 	</script>
 
 </head>
@@ -95,12 +72,6 @@ if(!isset($_COOKIE["user"])) {
 
 
 <form name="f1" action="book.php" method="post">
-
-	
-<!-- &nbsp Username:
-<input type="text" name="uname"></input> 
-
- --><br>	
 
 
 &nbsp Start Date :
@@ -133,7 +104,7 @@ if(!isset($_COOKIE["user"])) {
 	<input type="number" name="kms" min="10" ></input> 
 	<br>
 &nbsp	Total Fare :
-	<input type="" readonly="" name="fare" ></input>
+	<input type="number" readonly="" name="fare" ></input>
 	<br>
 	<input type="submit" onclick="pop()" ></input>
 	<input type="reset"></input> 
